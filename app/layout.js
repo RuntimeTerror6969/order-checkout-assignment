@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { ThemeProvider } from "../context/ThemeContext";
 import "../public/styles/globals.css";
 
@@ -20,7 +21,17 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="overflow-x-hidden">
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <Suspense
+            fallback={
+              <div className="min-h-screen flex items-center justify-center">
+                Loading...
+              </div>
+            }
+          >
+            {children}
+          </Suspense>
+        </ThemeProvider>
       </body>
     </html>
   );
