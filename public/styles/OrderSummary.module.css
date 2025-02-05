@@ -1,0 +1,38 @@
+/* styles/OrderSummary.module.css */
+.orderSummary {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Full width of its container */
+  max-width: 100%; /* Ensure no fixed maximum that forces overflow */
+}
+
+.usd {
+  background-color: #e0f7fa;
+}
+
+.other {
+  background-color: #fce4ec;
+}
+
+.merchantInfo {
+  text-align: center;
+}
+
+.logo {
+  margin-top: 0.5rem;
+}
+
+.orderDetails {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.paymentIcons {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column; /* Stack payment methods vertically */
+  gap: 1rem;
+}
