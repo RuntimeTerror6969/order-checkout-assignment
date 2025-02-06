@@ -22,13 +22,7 @@ async function seed() {
       {
         merchantID: `MID${uuidv4().replace(/-/g, "").substring(0, 12)}`,
         merchantLogo: await generateLogoBuffer(
-          "https://www.apple.com/ac/structured-data/images/open_graph_logo.png"
-        ),
-      },
-      {
-        merchantID: `MID${uuidv4().replace(/-/g, "").substring(0, 12)}`,
-        merchantLogo: await generateLogoBuffer(
-          "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
         ),
       },
     ];

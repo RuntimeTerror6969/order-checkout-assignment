@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import OrderSummary from "../components/OrderSummary";
+import OrderSummary from "../components/OrderSummary.js";
 import ErrorPage from "../components/ErrorPage";
 import ThemeToggle from "../components/ThemeToggle";
 
